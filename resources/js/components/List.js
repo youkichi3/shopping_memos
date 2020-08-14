@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom'
 import { Button, TextField } from '@material-ui/core';
 // import '../../../public/css/list.css';
 
@@ -9,6 +10,8 @@ class List extends Component {
                 <div className="row">
                     <div className="col-12">
                         <h2 className="text-center mt-5">リストのタイトル</h2>
+
+                        <Button className="mt-5 ml-3" variant="contained"><Link to="/">戻る</Link></Button>
 
                         <div className="text-center">
                             <h5 className="mt-5">野菜リスト</h5>
