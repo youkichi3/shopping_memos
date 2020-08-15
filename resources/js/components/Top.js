@@ -13,7 +13,7 @@ class Top extends Component {
                         <Button className="text-center mt-5 pt-3 pb-3  mx-auto memo" variant="contained" color="secondary">ライフ</Button>
                         <Button className="text-center mt-5 pt-3 pb-3  mx-auto memo" variant="contained" color="secondary">イオン </Button>
                         <Button className="text-center mt-5 pt-3 pb-3  mx-auto memo" variant="contained" color="secondary">田中さんとの共有リスト </Button>
-                        <Button className="float-left mt-5" variant="contained" color="primary">共有する</Button>
+                        <Button className="float-left mt-5" variant="contained" color="primary"><Link to="/share">共有する</Link></Button>
                         <Button className="float-right mt-5" variant="contained" color="primary"><Link to="/list">リスト作成</Link></Button>
                     </div>
                 </div>
