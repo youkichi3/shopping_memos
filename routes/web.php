@@ -13,9 +13,16 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+Route::get('/vegetable_list', 'VegetableListController@index')->name('vegetableList');
+Route::get('/meal_list', 'MealListController@index')->name('mealList');
+Route::get('/fish_list', 'FishListController@index')->name('fishList');
+Route::get('/other_list', 'OtherListController@index')->name('otherList');
+
+
+
+Route::get('/{any}', function () {
     return view('welcome');
-});
+})->where('any', '.*');
 
 Auth::routes();
 

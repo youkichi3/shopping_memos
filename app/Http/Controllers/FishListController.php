@@ -14,7 +14,9 @@ class FishListController extends Controller
      */
     public function index()
     {
-        //
+        $fishLists = FishList::all();
+
+        return ['fishLists' => $fishLists];
     }
 
     /**

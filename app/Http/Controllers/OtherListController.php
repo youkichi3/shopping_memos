@@ -14,7 +14,9 @@ class OtherListController extends Controller
      */
     public function index()
     {
-        //
+        $otherLists = OtherList::all();
+
+        return ['otherLists' => $otherLists];
     }
 
     /**
