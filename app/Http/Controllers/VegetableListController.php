@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\VegetableList;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Log;
 
 class VegetableListController extends Controller
 {
@@ -14,7 +15,9 @@ class VegetableListController extends Controller
      */
     public function index()
     {
-        //
+        $vegetableLists = VegetableList::all();
+
+        return ['vegetableLists' => $vegetableLists];
     }
 
     /**

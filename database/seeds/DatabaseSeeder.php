@@ -17,6 +17,7 @@ class DatabaseSeeder extends Seeder
             VegetableListsTableSeeder::class,
             MealListsTableSeeder::class,
             FishListsTableSeeder::class,
+            OtherListsTableSeeder::class,
             ShareUsersTableSeeder::class,
         ]);
     }

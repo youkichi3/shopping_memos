@@ -14,7 +14,9 @@ class MealListController extends Controller
      */
     public function index()
     {
-        //
+        $mealLists = MealList::all();
+
+        return ['mealLists' => $mealLists];
     }
 
     /**
